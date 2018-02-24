@@ -1,0 +1,295 @@
+/* Universal */
+body {
+  line-height: 1.4rem;
+}
+html {
+  line-height: 1.4;
+  font-size: 18px;
+  font-family: Helvetica;
+}
+h1 {
+  margin: 0.67rem 0;
+}
+.frame {
+  max-width: 960px;
+  margin: auto;
+}
+@media only screen and (max-width: 1024px) {
+  .frame {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .frame {
+    max-width: 100%;
+  }
+}
+.flex {
+  display: flex;
+}
+/* ______BIG IMAGE_______*/
+header {
+  background-image: url(../images/glasses-bg.png);
+  height: 31rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+@media only screen and (max-width: 1024px) {
+  header {
+    height: 22rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  header {
+    height: 17rem;
+  }
+}
+/* LOGO and MENU*/
+.logo {
+  position: relative;
+  top: 1rem;
+  z-index: 1;
+  background-color: cadetblue;
+  font-size: 1rem;
+  font-family: Helvetica;
+  color: white;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+
+}
+@media only screen and (max-width: 1024px) {
+  .logo {
+    top: 0;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .logo {
+    top: 0;
+  }
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+}
+.left img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+.left p {
+
+}
+@media only screen and (max-width: 700px)  {
+  .left p {
+    display: none;
+  }
+}
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+
+}
+.logo .right_700 {
+  display: none;
+}
+.right ul {
+  display: flex;
+
+}
+ul li {
+  padding-left: 2rem;
+}
+/*  */
+@media only screen and (max-width: 700px)  {
+  .right ul {
+    display: none;
+  }
+
+  .logo .right_700 {
+    display: flex;
+  }
+}
+/* ______DON'T JUST LOOK, SEE. _______*/
+.main-banner {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  padding: 1.5rem 5rem;
+  background-color: white;
+  margin-top: 15rem;
+  margin-right: -2rem;
+  display: inline-block;
+}
+@media only screen and (max-width: 1024px) {
+  .main-banner {
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .main-banner {
+    font-size: 1rem;
+    padding: 1rem auto;
+    margin-top: 9rem;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin-right: 0;
+  }
+  h1 {
+    margin: 0;
+  }
+}
+header .flex {
+  justify-content: flex-end;
+}
+/* ICONS */
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 1024px) {
+  /* Придумать, как подвинуть влево и исправить текст
+
+?????????????????
+
+
+   */
+}
+@media only screen and (max-width: 700px) {
+  .icons {
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2.23rem auto;
+  }
+  .text {
+    font-size: 0.77rem;
+  }
+}
+.icons .exams, .icons .fittings, .icons .delivery {
+  height: 8rem;
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem;
+}
+@media only screen and (max-width: 700px) {
+  .icons .exams, .icons .fittings {
+    margin-bottom: 1.54rem;
+  }
+}
+.exams img {
+  width: 3.5rem;
+}
+.fittings img {
+  height: 3.5rem;
+}
+.delivery img {
+  height: 3.5rem;
+}
+.text {
+  text-align: center;
+}
+/* INFORMATION */
+.inform {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+/* Слева отступ при планшетных размерах */
+@media only screen and (max-width: 1024px) {
+  .inform {
+    padding-left: 4rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .inform {
+    flex-direction: column;
+    padding-left: 0;/* Слева отступ не нужен */
+  }
+}
+.philosophy, .appoint {
+  width: 35%;
+  margin-right: 5%;
+}
+@media only screen and (max-width: 700px) {
+  .philosophy, .appoint {
+    width: 100%;
+    padding-bottom: 4rem;
+  }
+}
+.one {
+  background-color: cadetblue;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: Helvetica;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+  padding-right: auto;
+  width: 10rem;
+  margin-bottom: 1rem;
+}
+.one h1 {
+  margin: 0;
+  color: white;
+}
+@media only screen and (max-width: 700px) {
+  .one {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .one h1 {
+    color: white;
+    text-align: center;
+  }
+  .two {
+    width: 100%;
+    margin-left: 1rem;/*для внешнего вида добавила */
+    margin-right: 2rem;/*для внешнего вида добавила */
+  }
+}
+/* FOOT */
+.foot {
+  padding: 4rem 0;
+  margin-top: 5rem;
+  height: 1.5rem;
+  background-color: azure;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.foot img {
+  padding-left: 2rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+@media only screen and (max-width: 700px)  {
+  .foot {
+    margin-top: 0;
+    justify-content: center;
+
+  }
+  .foot p {
+    display: none;
+  }
+}
